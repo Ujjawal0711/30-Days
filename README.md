@@ -11,7 +11,7 @@ Welcome to my 30-day coding challenge! My goal is to strengthen my understanding
 | Day | Topic | Category | Status | Solution |
 | :---: | :--- | :--- | :---: | :---: |
 | **01** | C Basics: Loops & Conditionals | C Programming | ✅ | [Link](./Day01) |
-| **02** | Functions & Scope | C Programming | ⏳ | |
+| **02** | Functions & Scope | C Programming | ✅ | |
 | **03** | Stack vs Heap Memory | C Programming | ✅ | [Link](./Day03) |
 | **04** | Arrays vs Pointers | C Programming | ✅ | [Link](./Day04) |
 | **05** | Strings & Char Manipulation | C Programming | ⏳ | |
