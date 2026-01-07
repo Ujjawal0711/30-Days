@@ -1,0 +1,19 @@
+// Day 1: Arrays are just Pointers in disguise
+
+#include <stdio.h>
+
+int main() {
+    int numbers[] = {10, 20, 30, 40};
+
+    // Standard way to access data
+    int a = numbers[1]; // Returns 20
+
+    // Pointer math way (The "truth")
+    // 'numbers' decays to the address of the 
+    // first element
+    int b = *(numbers + 1); // Also returns 20
+
+    // Conclusion: 
+    // numbers[i] is syntactic sugar for *(numbers + i)
+    return 0;
+}
