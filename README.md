@@ -58,8 +58,7 @@ This repository documents my daily deep dives into:
 
 ### 🤝 Connect
 I post daily updates and breakdowns of these concepts on LinkedIn.
-* **LinkedIn:** [Your LinkedIn Profile Link Here]
-* **Blog:** [Your Dev.to/Hashnode Link Here]
-
+* **LinkedIn:** [My LinkedIn Profile](https://www.linkedin.com/in/ujjawal-chaudhary-24a37031b/)
+* **Blog:** [My Dev.to Blog](https://dev.to/ujjawal0711)
 ---
 *Created as part of the #30DaysOfCode Challenge.*
