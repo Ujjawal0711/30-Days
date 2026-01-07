@@ -24,19 +24,19 @@ This repository documents my daily deep dives into:
 | Day | Topic | Category | Link to Code |
 | :--- | :--- | :--- | :--- |
 | **01** | Arrays vs. Pointers (The Array Lie) | 🟢 C / Memory | [View Code](./Day-01-Arrays-vs-Pointers) |
-| **02** | Pointer Arithmetic & Traversal | 🟢 C / Memory | [View Code](./Day-02-Pointer-Arithmetic) |
-| **03** | Stack vs. Heap (malloc/free) | 🟢 C / Memory | [View Code](./Day-03-Stack-vs-Heap-Allocation) |
-| **04** | The `sizeof` Trap & Array Decay | 🟢 C / Memory | [View Code](./Day-04-Sizeof-Array-Decay) |
-| **05** | Strings & Null Terminators | 🟢 C / Memory | [View Code](./Day-05-Strings-and-Null-Terminators) |
-| **06** | Structs & Custom Data Types | 🟢 C / Memory | [View Code](./Day-06-Structs-and-Data-Types) |
-| **07** | **Week 1 Retrospective** | 📝 Review | [View Code](./Day-07-Week-1-Retrospective) |
-| **08** | Visualizing Stack Frames | 🟠 Algorithms | [View Code](./Day-08-Stack-Frames-and-Recursion) |
-| **09** | Factorial: Iteration vs. Recursion | 🟠 Algorithms | [View Code](./Day-09-Factorial-Iteration-vs-Recursion) |
-| **10** | Fibonacci: The O(2^n) Trap | 🟠 Algorithms | [View Code](./Day-10-Fibonacci-Exponential-Complexity) |
-| **11** | Memoization & Dynamic Programming | 🟠 Algorithms | [View Code](./Day-11-Memoization-Optimization) |
-| **12** | Binary Search (Divide & Conquer) | 🟠 Algorithms | [View Code](./Day-12-Binary-Search-Algorithm) |
-| **13** | Tail Call Optimization (TCO) | 🟠 Algorithms | [View Code](./Day-13-Tail-Call-Optimization) |
-| **14** | **Week 2 Retrospective** | 📝 Review | [View Code](./Day-14-Week-2-Retrospective) |
+| **02** | Pointer Arithmetic & Traversal | 🟢 C / Memory | *Pending* |
+| **03** | Stack vs. Heap (malloc/free) | 🟢 C / Memory | *Pending* |
+| **04** | The `sizeof` Trap & Array Decay | 🟢 C / Memory | *Pending* |
+| **05** | Strings & Null Terminators | 🟢 C / Memory | *Pending* |
+| **06** | Structs & Custom Data Types | 🟢 C / Memory | *Pending* |
+| **07** | **Week 1 Retrospective** | 📝 Review | *Pending* |
+| **08** | Visualizing Stack Frames | 🟠 Algorithms | *Pending* |
+| **09** | Factorial: Iteration vs. Recursion | 🟠 Algorithms | *Pending* |
+| **10** | Fibonacci: The O(2^n) Trap | 🟠 Algorithms | *Pending* |
+| **11** | Memoization & Dynamic Programming | 🟠 Algorithms | *Pending* |
+| **12** | Binary Search (Divide & Conquer) | 🟠 Algorithms | *Pending* |
+| **13** | Tail Call Optimization (TCO) | 🟠 Algorithms | *Pending* |
+| **14** | **Week 2 Retrospective** | 📝 Review | *Pending* |
 | **15** | Linked Lists Implementation | 🔵 Data Structures | *Pending* |
 | **16** | Arrays vs. Linked Lists (Performance) | 🔵 Data Structures | *Pending* |
 | **17** | Floyd's Cycle Detection Algorithm | 🔵 Data Structures | *Pending* |
