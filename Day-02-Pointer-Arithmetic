@@ -1,0 +1,32 @@
+// Day 2: Traversing Memory without an Index
+
+#include <stdio.h>
+
+// --- The Code from the Post ---
+void iterate_with_pointers(const int *ptr, int size) {
+    // We don't need 'i' or 'array[i]'
+    // We just look at the end address
+    // (ptr + size) adds (size * 4 bytes) to the address
+    const int *end = ptr + size;
+    
+    while (ptr < end) {
+        // Dereference the current address to get value
+        printf("Value: %d\n", *ptr);
+        
+        // Move the pointer to the next integer block
+        // (Jumps 4 bytes automatically)
+        ptr++; 
+    }
+}
+// ------------------------------
+
+int main() {
+    // Test the function
+    int numbers[] = {10, 20, 30, 40, 50};
+    int len = sizeof(numbers) / sizeof(numbers[0]);
+
+    printf("Iterating through array using pointers:\n");
+    iterate_with_pointers(numbers, len);
+
+    return 0;
+}
