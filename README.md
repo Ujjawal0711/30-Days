@@ -24,7 +24,7 @@ This repository documents my daily deep dives into:
 | Day | Topic | Category | Link to Code |
 | :--- | :--- | :--- | :--- |
 | **01** | Arrays vs. Pointers (The Array Lie) | 🟢 C / Memory | [View Code](./Day-01-Arrays-vs-Pointers) |
-| **02** | Pointer Arithmetic & Traversal | 🟢 C / Memory | *Pending* |
+| **02** | Pointer Arithmetic & Traversal | 🟢 C / Memory | [View Code](./Day-02-Pointer-Arithmetic) |
 | **03** | Stack vs. Heap (malloc/free) | 🟢 C / Memory | *Pending* |
 | **04** | The `sizeof` Trap & Array Decay | 🟢 C / Memory | *Pending* |
 | **05** | Strings & Null Terminators | 🟢 C / Memory | *Pending* |
