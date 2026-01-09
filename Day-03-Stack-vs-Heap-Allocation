@@ -1,0 +1,44 @@
+// Day 3: The Danger of the Heap
+
+#include <stdio.h>
+#include <stdlib.h> // Required for malloc/free
+
+void heap_allocation() {
+    // 1. MALLOC: Requesting memory manually
+    // This memory lives in the HEAP, not the Stack.
+    // It will stay there until we explicitly destroy it.
+    int *ptr = (int*)malloc(sizeof(int));
+    
+    if (ptr == NULL) {
+        printf("Memory allocation failed.\n");
+        return;
+    }
+
+    // 2. USE: We can treat it like a normal variable
+    *ptr = 999;
+    printf("Value in Heap: %d\n", *ptr);
+
+    // 3. FREE: We MUST manually release it
+    free(ptr);
+    
+    // 4. SAFETY: Set pointer to NULL to avoid "Dangling Pointers"
+    ptr = NULL;
+    printf("Memory freed successfully.\n");
+}
+
+void stack_allocation() {
+    // This variable is "automatically" destroyed 
+    // when this function ends.
+    int x = 10; 
+    printf("Value in Stack: %d\n", x);
+}
+
+int main() {
+    printf("--- Stack Example ---\n");
+    stack_allocation();
+    
+    printf("\n--- Heap Example ---\n");
+    heap_allocation();
+
+    return 0;
+}
