@@ -1,0 +1,26 @@
+// Day 4: The Sizeof Trap (Array Decay)
+
+#include <stdio.h>
+
+// When passed as an argument, 'int arr[]' is treated exactly as 'int *arr'
+void check_size(int arr[]) {
+    // This will print 8 (on 64-bit OS) because it's just a pointer address now
+    printf("Size inside function: %zu bytes (It's a trap!)\n", sizeof(arr));
+}
+
+int main() {
+    int data[] = {10, 20, 30, 40, 50};
+
+    // This calculates the total memory: 5 elements * 4 bytes = 20 bytes
+    size_t actual_size = sizeof(data);
+    printf("Size in main: %zu bytes\n", actual_size);
+
+    // Watch the size "shrink" when we pass it
+    check_size(data);
+
+    // Calculated length
+    int length = sizeof(data) / sizeof(data[0]);
+    printf("Calculated Length: %d elements\n", length);
+
+    return 0;
+}
