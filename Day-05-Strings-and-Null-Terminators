@@ -1,0 +1,30 @@
+// Day 5: The most dangerous character in C (\0)
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // Scenario 1: The "Safe" Way
+    // String literals automatically add the hidden \0 at the end.
+    // "Hello" is actually {'H','e','l','l','o','\0'}
+    char safe[] = "Hello"; 
+    
+    printf("--- Safe String ---\n");
+    printf("Value: %s\n", safe);
+    printf("Size in bytes: %zu\n", sizeof(safe)); // Prints 6, not 5!
+    printf("\n");
+
+    // Scenario 2: The "Unsafe" Way
+    // We force a character array without room for the terminator.
+    char unsafe[] = {'H', 'i', '!', '!'}; 
+    
+    printf("--- Unsafe String ---\n");
+    printf("We expect: Hi!!\n");
+    printf("We get:    ");
+    
+    // WARNING: This reads past the array bounds until it hits a random 0 in memory.
+    // You might see "Hi!!@#$%" or garbage characters.
+    printf("%s\n", unsafe); 
+
+    return 0;
+}
