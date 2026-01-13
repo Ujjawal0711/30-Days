@@ -1,0 +1,35 @@
+// Day 6: Structs (The ancestor of Classes)
+
+#include <stdio.h>
+#include <string.h>
+
+// 1. Define the Structure
+// "typedef" lets us use "Student" instead of "struct Student" every time
+typedef struct {
+    int id;
+    char name[50];
+    float gpa;
+} Student;
+
+void print_student(Student s) {
+    // We pass the entire struct as a value
+    printf("ID: %d | Name: %s | GPA: %.2f\n", s.id, s.name, s.gpa);
+}
+
+int main() {
+    // 2. Create an instance of the structure
+    Student student1;
+
+    // 3. Assign values (Dot notation)
+    student1.id = 101;
+    strcpy(student1.name, "John Doe"); // We must copy strings, not assign them!
+    student1.gpa = 3.5;
+
+    // 4. Initialization shortcut
+    Student student2 = {102, "Jane Smith", 3.9};
+
+    print_student(student1);
+    print_student(student2);
+
+    return 0;
+}
