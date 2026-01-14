@@ -29,7 +29,7 @@ This repository documents my daily deep dives into:
 | **04** | The `sizeof` Trap & Array Decay | 🟢 C / Memory |[View Code](./Day-04-Sizeof-Array-Decay) |
 | **05** | Strings & Null Terminators | 🟢 C / Memory |[View Code](./Day-05-Strings-and-Null-Terminators) |
 | **06** | Structs & Custom Data Types | 🟢 C / Memory | [View Code](./Day-06-Structs-and-Data-Types) |
-| **07** | **Week 1 Retrospective** | 📝 Review | *Pending* |
+| **07** | **Week 1 Retrospective** | 📝 Review | [View Code](./Day-07-Week-1-Retrospective) |
 | **08** | Visualizing Stack Frames | 🟠 Algorithms | *Pending* |
 | **09** | Factorial: Iteration vs. Recursion | 🟠 Algorithms | *Pending* |
 | **10** | Fibonacci: The O(2^n) Trap | 🟠 Algorithms | *Pending* |
