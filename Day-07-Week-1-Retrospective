@@ -1,0 +1,40 @@
+// Day 7: Week 1 Recap (Putting it all together)
+
+#include <stdio.h>
+
+// We use a Struct (Day 6) to group our progress data
+typedef struct {
+    int days_completed;
+    int lines_of_code;
+    char *key_learnings[5]; // Array of String Pointers (Day 5 + Day 1)
+} WeeklyRecap;
+
+int main() {
+    // Initialize the struct
+    WeeklyRecap week1 = {
+        .days_completed = 7,
+        .lines_of_code = 250,
+        .key_learnings = {
+            "Pointers are just addresses",
+            "Arrays decay into pointers",
+            "Malloc allocates on the Heap",
+            "Free prevents Memory Leaks",
+            "Structs group data together"
+        }
+    };
+
+    printf("=== WEEK 1 RETROSPECTIVE ===\n");
+    printf("Days Coded: %d/30\n", week1.days_completed);
+    printf("Lines Written: ~%d\n", week1.lines_of_code);
+    printf("\nKey Concepts:\n");
+
+    // Loop through the array of strings
+    for (int i = 0; i < 5; i++) {
+        // Using Pointer Arithmetic to number the list
+        printf("%d. %s\n", i + 1, week1.key_learnings[i]);
+    }
+
+    printf("\nStatus: Ready for Week 2 (Algorithms) 🚀\n");
+
+    return 0;
+}
