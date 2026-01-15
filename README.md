@@ -30,7 +30,7 @@ This repository documents my daily deep dives into:
 | **05** | Strings & Null Terminators | 🟢 C / Memory |[View Code](./Day-05-Strings-and-Null-Terminators) |
 | **06** | Structs & Custom Data Types | 🟢 C / Memory | [View Code](./Day-06-Structs-and-Data-Types) |
 | **07** | **Week 1 Retrospective** | 📝 Review | [View Code](./Day-07-Week-1-Retrospective) |
-| **08** | Visualizing Stack Frames | 🟠 Algorithms | *Pending* |
+| **08** | Visualizing Stack Frames | 🟠 Algorithms | [View Code](./Day-08-Stack-Frames-and-Recursion) |
 | **09** | Factorial: Iteration vs. Recursion | 🟠 Algorithms | *Pending* |
 | **10** | Fibonacci: The O(2^n) Trap | 🟠 Algorithms | *Pending* |
 | **11** | Memoization & Dynamic Programming | 🟠 Algorithms | *Pending* |
