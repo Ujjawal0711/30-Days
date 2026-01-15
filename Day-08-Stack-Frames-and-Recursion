@@ -1,0 +1,34 @@
+// Day 8: Visualizing the Call Stack
+
+#include <stdio.h>
+
+// A recursive function is just a function that calls itself.
+// Every time it calls itself, a new "Stack Frame" is created in memory.
+void recursive_layer(int layer) {
+    // 1. Base Case: The "Exit Strategy"
+    if (layer == 0) {
+        printf(" -> [Base Case Reached] Stopping recursion.\n");
+        return;
+    }
+
+    // 2. The Work: Print current layer and memory address
+    // We print &layer to prove that 'layer' exists in a different spot in RAM 
+    // for every single call.
+    printf(" -> Entering Frame %d (Address: %p)\n", layer, (void*)&layer);
+
+    // 3. The Recursive Step
+    recursive_layer(layer - 1);
+
+    // 4. The Return (Popping the Stack)
+    printf(" <- Exiting Frame %d\n", layer);
+}
+
+int main() {
+    printf("Starting Recursion...\n");
+    
+    // We start at layer 3
+    recursive_layer(3);
+    
+    printf("Back in Main. Stack is empty.\n");
+    return 0;
+}
