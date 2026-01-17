@@ -1,0 +1,38 @@
+// Day 9: Factorial (Iteration vs Recursion)
+
+#include <stdio.h>
+
+// --- Recursive Solution ---
+// Time Complexity: O(n)
+// Space Complexity: O(n) (Stack Frames)
+unsigned long long factorial_recursive(int n) {
+    // Base Case
+    if (n <= 1) return 1;
+    // Recursive Step
+    return n * factorial_recursive(n - 1);
+}
+
+// --- Iterative Solution ---
+// Time Complexity: O(n)
+// Space Complexity: O(1) (Only stores 'result' and 'i')
+unsigned long long factorial_iterative(int n) {
+    unsigned long long result = 1;
+    for (int i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+int main() {
+    int number = 10;
+    
+    // We use "unsigned long long" because factorials get HUGE very quickly.
+    // Even 20! is too big for a standard integer.
+    
+    printf("Calculating Factorial of %d...\n", number);
+    
+    printf("Recursive Result: %llu\n", factorial_recursive(number));
+    printf("Iterative Result: %llu\n", factorial_iterative(number));
+
+    return 0;
+}
